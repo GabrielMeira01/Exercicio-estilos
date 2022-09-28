@@ -4,9 +4,9 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 export default function App() {
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar
-        barStyle="light-content"
+        barStyle='dark-content'
         backgroundColor="transparent"
         translucent
       />
@@ -30,28 +30,27 @@ export default function App() {
         <View style={styles.quadradoVerde}></View>
         <View style={styles.quadradoAzul}></View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#111111'
+    flex: 1
   },
   secao1: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: '#FFFFFF',
   },
   texto: {
     fontWeight: 'bold',
     marginTop: 10,
-    marginLeft: 10,
+    marginBottom: 10
   },
 
   secao2: {
-    flex: 5,
+    flex: 1,
     backgroundColor: '#EEE',
   },
 
@@ -79,10 +78,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#00AAFF',
     position: 'absolute',
     left: 200,
-    top: 150,
+    top: 190,
     height: 50,
     width: 50,
-    marginTop: 40,
     zIndex: 1,
   },
 });
